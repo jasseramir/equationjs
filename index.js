@@ -1,3 +1,26 @@
+class ComplexNumber {
+    constructor(real, imaginary) {
+        this.real = real;
+        this.imaginary = imaginary;
+    }
+
+    toString() {
+        if (this.imaginary === 0) {
+            return `${this.real}`;
+        }
+
+        if (this.real === 0) {
+            return `${this.imaginary}i`;
+        }
+
+        if (this.imaginary > 0) {
+            return `${this.real} + ${this.imaginary}i`;
+        }
+
+        return `${this.real} - ${Math.abs(this.imaginary)}i`;
+    }
+}
+
 class LinearEquation {
     constructor(equationStr) {
         this.a = 0;
