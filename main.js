@@ -25,13 +25,14 @@ class LinearEquation {
             term = term.slice(1);
         }
 
-        if (term === this.variable) {
-            term = '1' + this.variable;
-        } else if (term === '-' + this.variable) {
-            term = '-1' + this.variable;
+        if (term.startsWith(this.variable)) {
+            term = '1' + term;
+        } else if (term.startsWith('-' + this.variable)) {
+            term = '-1' + term.replace('-', '');
         }
 
         if (!term) return;
+
         const lastChar = term[term.length - 1];
 
         if (lastChar === this.variable) {
