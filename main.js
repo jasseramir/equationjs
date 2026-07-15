@@ -21,6 +21,8 @@ class LinearEquation {
     }
 
     parseTerm(term, isRightSide) {
+        if (!term) return;
+
         if (term.startsWith('+')) {
             term = term.slice(1);
         }
@@ -31,11 +33,7 @@ class LinearEquation {
             term = '-1' + term.replace('-', '');
         }
 
-        if (!term) return;
-
-        const lastChar = term[term.length - 1];
-
-        if (lastChar === this.variable) {
+        if (term.includes(this.variable)) {
             const value = Number(term.slice(0, -1));
 
             this.ref.push({
