@@ -34,7 +34,7 @@ class LinearEquation {
         }
 
         if (term.includes(this.variable)) {
-            const value = Number(term.slice(0, indexOf(this.variable)));
+            const value = Number(term.slice(0, term.indexOf(this.variable)));
 
             this.ref.push({
                 type: 'variable',
