@@ -244,13 +244,19 @@ class QuadraticEquation {
             const posRoot = (-this.b + Math.sqrt(discriminant)) / (2 * this.a);
             const negRoot = (-this.b - Math.sqrt(discriminant)) / (2 * this.a);
 
-            return 'x = ' + posRoot + '\n' + 'x = ' + negRoot;
+            return `x1 = ${posRoot}\nx2 = ${negRoot}`;
         } else if (discriminant === 0) {
             const root = (-this.b + Math.sqrt(discriminant)) / (2 * this.a);
 
-            return 'x = ' + root;
+            return `x = ${root}`;
         } else {
-            return 'Complex Solutions';
+            const real = -this.b / (this.a ** 2);
+            const imaginary = Math.sqrt(-discriminant) / (2 * this.a);
+
+            const z1 = new ComplexNumber(real, imaginary);
+            const z2 = new ComplexNumber(real, -imaginary);
+
+            return `x1 = ${z1}\nx2 = ${z2}`;
         }
     }
 }
