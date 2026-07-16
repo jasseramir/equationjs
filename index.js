@@ -260,3 +260,106 @@ class QuadraticEquation {
         }
     }
 }
+
+class SystemOfEquations {
+    constructor(equations) {
+        this.equations = equations;
+        this.variables = new Set();
+        this.ref = [];
+
+        this.detectVar();
+        this.parse();
+    }
+
+    detectVar() {
+        for (const equation of this.equations) {
+            for (const char of equation) {
+                if (/[a-zA-Z]/.test(char)) {
+                    this.variables.add(char);
+                }
+            }
+        }
+    }
+
+    parseTerm(term, isRightSide, equationIndex) {
+        if (!term) return;
+
+        let termVar = null;
+
+        for (const variable of this.variables) {
+            if (term[term.length - 1] === variable) {
+                termVar = variable;
+            }
+        }
+
+        if (term.startsWith('+')) {
+            term = term.slice(1);
+        }
+
+        if (term.startsWith(termVar)) {
+            term = '1' + term;
+        } else if (term.startsWith('-' + termVar)) {
+            term = '-1' + term.replace('-', '');
+        }
+
+        if (termVar !== null) {
+            const coefficient = (isRightSide ? -1 : 1) * Number(term.slice(0, term.indexOf(termVar)));
+            this.ref[equationIndex][termVar] += coefficient;
+        } else {
+            this.ref[equationIndex].constant += isRightSide ? -Number(term) : Number(term);
+        }
+    }
+
+    parseSide(side, isRightSide, equationIndex) {
+        let currentTerm = '';
+
+        for (const char of side) {
+            if (char === '-' || char === '+') {
+                this.parseTerm(currentTerm, isRightSide, equationIndex);
+                currentTerm = char;
+            } else {
+                currentTerm += char;
+            }
+        }
+
+        if (currentTerm !== '') {
+            this.parseTerm(currentTerm, isRightSide, equationIndex);
+        }
+    }
+
+    parse() {
+        this.ref = [];
+
+        for (let i = 0; i < this.equations.length; i++) {
+            const [leftSide, rightSide] = this.equations[i].replace(/\s+/g, '').split('=');
+
+            this.ref.push({});
+
+            for (const variable of this.variables) {
+                this.ref[i][variable] = 0;
+            }
+
+            this.ref[i].constant = 0;
+
+            this.parseSide(leftSide, false, i);
+            this.parseSide(rightSide, true, i);
+        }
+    }
+
+    toMatrix() {
+        const matrix = [];
+
+        for (const equation of this.ref) {
+            const row = [];
+
+            for (const variable of this.variables) {
+                row.push(equation[variable]);
+            }
+
+            row.push(-equation.constant);
+            matrix.push(row);
+        }
+
+        return matrix;
+    }
+}
