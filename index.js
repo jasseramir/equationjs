@@ -250,7 +250,7 @@ class QuadraticEquation {
 
             return `x = ${root}`;
         } else {
-            const real = -this.b / (this.a ** 2);
+            const real = -this.b / (2 * this.a);
             const imaginary = Math.sqrt(-discriminant) / (2 * this.a);
 
             const z1 = new ComplexNumber(real, imaginary);
