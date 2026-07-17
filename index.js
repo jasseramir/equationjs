@@ -362,4 +362,43 @@ class SystemOfEquations {
 
         return matrix;
     }
+
+    solve() {
+        const vars = [...this.variables];
+
+        const matrix = this.toMatrix();
+        const n = matrix.length;
+
+        let returnContainer = '';
+
+        for (let pivot = 0; pivot < n - 1; pivot++) {
+            for (let i = pivot + 1; i < n; i++) {
+                const factor = matrix[i][pivot] / matrix[pivot][pivot];
+
+                for (let j = pivot; j < matrix[i].length; j++) {
+                    matrix[i][j] = matrix[i][j] - factor * matrix[pivot][j];
+                }
+            }
+        }
+
+        for (let i = n - 1; i >= 0; i--) {
+            let temp = matrix[i][matrix[i].length - 1];
+
+            for (let j = i + 1; j < matrix[i].length - 1; j++) {
+                const currentVar = vars[j];
+                if (this.result[currentVar] !== null) {
+                    temp -= this.result[currentVar] * matrix[i][j];
+                }
+            }
+
+            const result = temp / matrix[i][i];
+            this.result[vars[i]] = result;
+        }
+
+        const resultsArray = Object.entries(this.result);
+
+        returnContainer = resultsArray.map(([variable, value]) => `${variable} = ${value}`).join('\n');
+
+        return returnContainer;
+    }
 }
