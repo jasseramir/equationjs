@@ -1,7 +1,15 @@
+function clean(num) {
+    if (Math.abs(num) < 1e-10) {
+        return 0;
+    }
+
+    return Number(num.toFixed(10));
+}
+
 class ComplexNumber {
     constructor(real, imaginary) {
-        this.real = real;
-        this.imaginary = imaginary;
+        this.real = clean(real);
+        this.imaginary = clean(imaginary);
     }
 
     toString() {
@@ -122,7 +130,7 @@ class LinearEquation {
             return 'No Solution';
         }
 
-        return `${this.variable} = ${this.b / this.a}`;
+        return `${this.variable} = ${clean(this.b / this.a)}`;
     }
 }
 
@@ -241,12 +249,12 @@ class QuadraticEquation {
         const discriminant = this.b ** 2 - 4 * this.a * this.c;
 
         if (discriminant > 0) {
-            const posRoot = (-this.b + Math.sqrt(discriminant)) / (2 * this.a);
-            const negRoot = (-this.b - Math.sqrt(discriminant)) / (2 * this.a);
+            const posRoot = clean((-this.b + Math.sqrt(discriminant)) / (2 * this.a));
+            const negRoot = clean((-this.b - Math.sqrt(discriminant)) / (2 * this.a));
 
             return `x1 = ${posRoot}\nx2 = ${negRoot}`;
         } else if (discriminant === 0) {
-            const root = (-this.b + Math.sqrt(discriminant)) / (2 * this.a);
+            const root = clean((-this.b + Math.sqrt(discriminant)) / (2 * this.a));
 
             return `x = ${root}`;
         } else {
@@ -377,7 +385,7 @@ class SystemOfEquations {
                 const factor = matrix[i][pivot] / matrix[pivot][pivot];
 
                 for (let j = pivot; j < matrix[i].length; j++) {
-                    matrix[i][j] = matrix[i][j] - factor * matrix[pivot][j];
+                    matrix[i][j] = clean(matrix[i][j] - factor * matrix[pivot][j]);
                 }
             }
         }
@@ -392,7 +400,7 @@ class SystemOfEquations {
                 }
             }
 
-            const result = temp / matrix[i][i];
+            const result = clean(temp / matrix[i][i]);
             this.result[vars[i]] = result;
         }
 
