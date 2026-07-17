@@ -266,6 +266,7 @@ class SystemOfEquations {
         this.equations = equations;
         this.variables = new Set();
         this.ref = [];
+        this.result = {};
 
         this.detectVar();
         this.parse();
@@ -393,6 +394,21 @@ class SystemOfEquations {
 
             const result = temp / matrix[i][i];
             this.result[vars[i]] = result;
+        }
+
+        for (const row of matrix) {
+            const constant = row[row.length - 1];
+            const coefficients = row.slice(0, row.length - 1);
+
+            const allZero = coefficients.every(coefficient => coefficient === 0);
+
+            if (allZero && constant === 0) {
+                return 'Infinite Solutions';
+            }
+
+            if (allZero) {
+                return 'No Solution';
+            }
         }
 
         const resultsArray = Object.entries(this.result);
