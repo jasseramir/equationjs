@@ -1,4 +1,10 @@
 function clean(num) {
+    const roundedInteger = Math.round(num);
+
+    if (Math.abs(num - roundedInteger) < 1e-8) {
+        return roundedInteger;
+    }
+
     if (Math.abs(num) < 1e-10) {
         return 0;
     }
