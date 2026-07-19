@@ -281,11 +281,11 @@ class SystemOfEquations {
         this.variables = new Set();
         this.ref = [];
         this.result = {};
-        
+
         this.detectVar();
         this.parse();
     }
-    
+
     detectVar() {
         for (const equation of this.equations) {
             for (const char of equation) {
@@ -294,35 +294,35 @@ class SystemOfEquations {
                 }
             }
         }
-        
+
         this.variables = new Set([...this.variables].sort());
-        
+
         for (const variable of this.variables) {
             this.result[variable] = null;
         }
     }
-    
+
     parseTerm(term, isRightSide, equationIndex) {
         if (!term) return;
-        
+
         let termVar = null;
-        
+
         for (const variable of this.variables) {
             if (term[term.length - 1] === variable) {
                 termVar = variable;
             }
         }
-        
+
         if (term.startsWith('+')) {
             term = term.slice(1);
         }
-        
+
         if (term.startsWith(termVar)) {
             term = '1' + term;
         } else if (term.startsWith('-' + termVar)) {
             term = '-1' + term.replace('-', '');
         }
-        
+
         if (termVar !== null) {
             const coefficient = (isRightSide ? -1 : 1) * Number(term.slice(0, term.indexOf(termVar)));
             this.ref[equationIndex][termVar] += coefficient;
@@ -330,10 +330,10 @@ class SystemOfEquations {
             this.ref[equationIndex].constant += isRightSide ? -Number(term) : Number(term);
         }
     }
-    
+
     parseSide(side, isRightSide, equationIndex) {
         let currentTerm = '';
-        
+
         for (const char of side) {
             if (char === '-' || char === '+') {
                 this.parseTerm(currentTerm, isRightSide, equationIndex);
@@ -342,54 +342,54 @@ class SystemOfEquations {
                 currentTerm += char;
             }
         }
-        
+
         if (currentTerm !== '') {
             this.parseTerm(currentTerm, isRightSide, equationIndex);
         }
     }
-    
+
     parse() {
         this.ref = [];
-        
+
         for (let i = 0; i < this.equations.length; i++) {
             const [leftSide, rightSide] = this.equations[i].replace(/\s+/g, '').split('=');
-            
+
             this.ref.push({});
-            
+
             for (const variable of this.variables) {
                 this.ref[i][variable] = 0;
             }
-            
+
             this.ref[i].constant = 0;
-            
+
             this.parseSide(leftSide, false, i);
             this.parseSide(rightSide, true, i);
         }
     }
-    
+
     toMatrix() {
         const matrix = [];
-        
+
         for (const equation of this.ref) {
             const row = [];
-            
+
             for (const variable of this.variables) {
                 row.push(equation[variable]);
             }
-            
+
             row.push(-equation.constant);
             matrix.push(row);
         }
-        
+
         return matrix;
     }
-    
+
     solve() {
         const vars = [...this.variables];
-        
+
         const matrix = this.toMatrix();
         const n = matrix.length;
-        
+
         for (let pivot = 0; pivot < n - 1; pivot++) {
             if (matrix[pivot][pivot] === 0) {
                 for (let i = pivot + 1; i < n; i++) {
@@ -398,50 +398,50 @@ class SystemOfEquations {
                         break;
                     }
                 }
-                
+
                 if (matrix[pivot][pivot] === 0) {
                     continue;
                 }
             }
-            
+
             for (let i = pivot + 1; i < n; i++) {
                 const factor = matrix[i][pivot] / matrix[pivot][pivot];
-                
+
                 for (let j = pivot; j < matrix[i].length; j++) {
                     matrix[i][j] = clean(matrix[i][j] - factor * matrix[pivot][j]);
                 }
             }
         }
-        
+
         for (let i = n - 1; i >= 0; i--) {
             let temp = matrix[i][matrix[i].length - 1];
-            
+
             for (let j = i + 1; j < matrix[i].length - 1; j++) {
                 const currentVar = vars[j];
                 if (this.result[currentVar] !== null) {
                     temp -= this.result[currentVar] * matrix[i][j];
                 }
             }
-            
+
             const result = clean(temp / matrix[i][i]);
             this.result[vars[i]] = result;
         }
-        
+
         for (const row of matrix) {
             const constant = row[row.length - 1];
             const coefficients = row.slice(0, row.length - 1);
-            
+
             const allZero = coefficients.every(coefficient => coefficient === 0);
-            
+
             if (allZero && constant === 0) {
                 return 'Infinite Solutions';
             }
-            
+
             if (allZero) {
                 return 'No Solution';
             }
         }
-        
+
         return this.result;
     }
 }
