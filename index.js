@@ -71,7 +71,7 @@ class LinearEquation {
         }
 
         if (term.includes(this.variable)) {
-            const value = Number(term.slice(0, term.indexOf(this.variable)));
+            const value = Number(term.slice(0, -1));
 
             this.ref.push({
                 type: 'variable',
@@ -258,11 +258,11 @@ class QuadraticEquation {
             const posRoot = clean((-this.b + Math.sqrt(discriminant)) / (2 * this.a));
             const negRoot = clean((-this.b - Math.sqrt(discriminant)) / (2 * this.a));
 
-            return `x1 = ${posRoot}\nx2 = ${negRoot}`;
+            return `${this.variable}1 = ${posRoot}\n${this.variable}2 = ${negRoot}`;
         } else if (discriminant === 0) {
             const root = clean((-this.b + Math.sqrt(discriminant)) / (2 * this.a));
 
-            return `x = ${root}`;
+            return `${this.variable} = ${root}`;
         } else {
             const real = -this.b / (2 * this.a);
             const imaginary = Math.sqrt(-discriminant) / (2 * this.a);
@@ -270,7 +270,7 @@ class QuadraticEquation {
             const z1 = new ComplexNumber(real, imaginary);
             const z2 = new ComplexNumber(real, -imaginary);
 
-            return `x1 = ${z1}\nx2 = ${z2}`;
+            return `${this.variable}1 = ${z1}\n${this.variable}2 = ${z2}`;
         }
     }
 }
@@ -294,6 +294,12 @@ class SystemOfEquations {
                 }
             }
         }
+
+        for (const variable of this.variables) {
+            this.result[variable] = null;
+        }
+
+        this.variables = new Set([...this.variables].sort());
     }
 
     parseTerm(term, isRightSide, equationIndex) {
@@ -384,8 +390,6 @@ class SystemOfEquations {
         const matrix = this.toMatrix();
         const n = matrix.length;
 
-        let returnContainer = '';
-
         for (let pivot = 0; pivot < n - 1; pivot++) {
             for (let i = pivot + 1; i < n; i++) {
                 const factor = matrix[i][pivot] / matrix[pivot][pivot];
@@ -425,10 +429,6 @@ class SystemOfEquations {
             }
         }
 
-        const resultsArray = Object.entries(this.result);
-
-        returnContainer = resultsArray.map(([variable, value]) => `${variable} = ${value}`).join('\n');
-
-        return returnContainer;
+        return this.result;
     }
 }
