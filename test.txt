@@ -1,0 +1,1220 @@
+======================================================================
+TEST SUITE — script.js (LinearEquation / QuadraticEquation / SystemOfEquations)
+Total Test Cases: 200   |   Passed: 200   |   Failed: 0
+======================================================================
+
+----------------------------------------------------------------------
+SECTION 1 — Linear Equations (ax + b = cx + d)  (80 cases)
+----------------------------------------------------------------------
+
+[001] Linear
+  Equation : -16 + 4a = -4a + 8
+  Expected : a = 3
+  Result   : a = 3
+  Status   : PASS
+
+[002] Linear
+  Equation : -9x - 11 = -8x + 5
+  Expected : x = -16
+  Result   : x = -16
+  Status   : PASS
+
+[003] Linear
+  Equation : -6x - 11 = -119
+  Expected : x = 18
+  Result   : x = 18
+  Status   : PASS
+
+[004] Linear
+  Equation : -16 - t = -3t - 34
+  Expected : t = -9
+  Result   : t = -9
+  Status   : PASS
+
+[005] Linear
+  Equation : -5n - 25 = 96 + 6n
+  Expected : n = -11
+  Result   : n = -11
+  Status   : PASS
+
+[006] Linear
+  Equation : 5n - 26 = 8n - 14
+  Expected : n = -4
+  Result   : n = -4
+  Status   : PASS
+
+[007] Linear
+  Equation : -2 - 8k = -6k + 4
+  Expected : k = -3
+  Result   : k = -3
+  Status   : PASS
+
+[008] Linear
+  Equation : -29 + 5b = -4b - 155
+  Expected : b = -14
+  Result   : b = -14
+  Status   : PASS
+
+[009] Linear
+  Equation : 13 - 2y = 8y + 23
+  Expected : y = -1
+  Result   : y = -1
+  Status   : PASS
+
+[010] Linear
+  Equation : -17 - 8b = 25 - 2b
+  Expected : b = -7
+  Result   : b = -7
+  Status   : PASS
+
+[011] Linear
+  Equation : 21 + 5n = 21 + 5n
+  Expected : n = -14
+  Result   : Infinite Solutions
+  Status   : PASS
+
+[012] Linear
+  Equation : -6 - 7a = 75 + 2a
+  Expected : a = -9
+  Result   : a = -9
+  Status   : PASS
+
+[013] Linear
+  Equation : -3 - 4a = -21 + 5a
+  Expected : a = 2
+  Result   : a = 2
+  Status   : PASS
+
+[014] Linear
+  Equation : -9b + 14 = 74 + 6b
+  Expected : b = -4
+  Result   : b = -4
+  Status   : PASS
+
+[015] Linear
+  Equation : 23 + 7x = 14 + 6x
+  Expected : x = -9
+  Result   : x = -9
+  Status   : PASS
+
+[016] Linear
+  Equation : 2z - 21 = 100 - 9z
+  Expected : z = 11
+  Result   : z = 11
+  Status   : PASS
+
+[017] Linear
+  Equation : -6a + 27 = 8a + 293
+  Expected : a = -19
+  Result   : a = -19
+  Status   : PASS
+
+[018] Linear
+  Equation : 3z - 30 = -174 - 5z
+  Expected : z = -18
+  Result   : z = -18
+  Status   : PASS
+
+[019] Linear
+  Equation : -2k + 16 = -8 - 4k
+  Expected : k = -12
+  Result   : k = -12
+  Status   : PASS
+
+[020] Linear
+  Equation : -18 + 9k = -81 + 2k
+  Expected : k = -9
+  Result   : k = -9
+  Status   : PASS
+
+[021] Linear
+  Equation : 6x - 2 = -2 + 6x
+  Expected : x = -15
+  Result   : Infinite Solutions
+  Status   : PASS
+
+[022] Linear
+  Equation : -7 - x = -3x + 29
+  Expected : x = 18
+  Result   : x = 18
+  Status   : PASS
+
+[023] Linear
+  Equation : y - 11 = 80 + 8y
+  Expected : y = -13
+  Result   : y = -13
+  Status   : PASS
+
+[024] Linear
+  Equation : 10 - 5k = -8k - 26
+  Expected : k = -12
+  Result   : k = -12
+  Status   : PASS
+
+[025] Linear
+  Equation : 3k + 26 = 106 - k
+  Expected : k = 20
+  Result   : k = 20
+  Status   : PASS
+
+[026] Linear
+  Equation : 22 - 7y = -7y + 22
+  Expected : y = -1
+  Result   : Infinite Solutions
+  Status   : PASS
+
+[027] Linear
+  Equation : -3 + 6z = -8z + 263
+  Expected : z = 19
+  Result   : z = 19
+  Status   : PASS
+
+[028] Linear
+  Equation : -13 + 5t = -t - 13
+  Expected : t = 0
+  Result   : t = 0
+  Status   : PASS
+
+[029] Linear
+  Equation : 2z - 21 = -9z + 155
+  Expected : z = 16
+  Result   : z = 16
+  Status   : PASS
+
+[030] Linear
+  Equation : 6x + 4 = 121 - 7x
+  Expected : x = 9
+  Result   : x = 9
+  Status   : PASS
+
+[031] Linear
+  Equation : -30 - 2y = y + 3
+  Expected : y = -11
+  Result   : y = -11
+  Status   : PASS
+
+[032] Linear
+  Equation : 6n - 1 = 4n + 19
+  Expected : n = 10
+  Result   : n = 10
+  Status   : PASS
+
+[033] Linear
+  Equation : -6 + 8n = -6 + 8n
+  Expected : n = 9
+  Result   : Infinite Solutions
+  Status   : PASS
+
+[034] Linear
+  Equation : 27 - 2a = 21
+  Expected : a = 3
+  Result   : a = 3
+  Status   : PASS
+
+[035] Linear
+  Equation : -6z + 24 = -5z + 28
+  Expected : z = -4
+  Result   : z = -4
+  Status   : PASS
+
+[036] Linear
+  Equation : 3a - 17 = -77 - 7a
+  Expected : a = -6
+  Result   : a = -6
+  Status   : PASS
+
+[037] Linear
+  Equation : 8k - 20 = 4k - 96
+  Expected : k = -19
+  Result   : k = -19
+  Status   : PASS
+
+[038] Linear
+  Equation : 8n - 6 = 74
+  Expected : n = 10
+  Result   : n = 10
+  Status   : PASS
+
+[039] Linear
+  Equation : 2y + 15 = -8y + 55
+  Expected : y = 4
+  Result   : y = 4
+  Status   : PASS
+
+[040] Linear
+  Equation : 7b = -2b + 153
+  Expected : b = 17
+  Result   : b = 17
+  Status   : PASS
+
+[041] Linear
+  Equation : -t + 7 = 97 + 4t
+  Expected : t = -18
+  Result   : t = -18
+  Status   : PASS
+
+[042] Linear
+  Equation : 7b - 10 = -145 - 8b
+  Expected : b = -9
+  Result   : b = -9
+  Status   : PASS
+
+[043] Linear
+  Equation : 3y + 12 = -18 + 6y
+  Expected : y = 10
+  Result   : y = 10
+  Status   : PASS
+
+[044] Linear
+  Equation : 6t + 26 = 47 + 9t
+  Expected : t = -7
+  Result   : t = -7
+  Status   : PASS
+
+[045] Linear
+  Equation : 22 - 6k = 166 + 6k
+  Expected : k = -12
+  Result   : k = -12
+  Status   : PASS
+
+[046] Linear
+  Equation : -1 - 4y = 10 + 7y
+  Expected : y = -1
+  Result   : y = -1
+  Status   : PASS
+
+[047] Linear
+  Equation : -13 + 8n = 3n + 37
+  Expected : n = 10
+  Result   : n = 10
+  Status   : PASS
+
+[048] Linear
+  Equation : -7b + 20 = 14 - 5b
+  Expected : b = 3
+  Result   : b = 3
+  Status   : PASS
+
+[049] Linear
+  Equation : -22 + 7t = -55 - 4t
+  Expected : t = -3
+  Result   : t = -3
+  Status   : PASS
+
+[050] Linear
+  Equation : -25 - 2y = -61 + 7y
+  Expected : y = 4
+  Result   : y = 4
+  Status   : PASS
+
+[051] Linear
+  Equation : -5 - 9a = -77 - 3a
+  Expected : a = 12
+  Result   : a = 12
+  Status   : PASS
+
+[052] Linear
+  Equation : 8k + 16 = -62 + 2k
+  Expected : k = -13
+  Result   : k = -13
+  Status   : PASS
+
+[053] Linear
+  Equation : 8y + 4 = 4y - 24
+  Expected : y = -7
+  Result   : y = -7
+  Status   : PASS
+
+[054] Linear
+  Equation : -27 - b = -8b + 113
+  Expected : b = 20
+  Result   : b = 20
+  Status   : PASS
+
+[055] Linear
+  Equation : 7z - 14 = 4 + z
+  Expected : z = 3
+  Result   : z = 3
+  Status   : PASS
+
+[056] Linear
+  Equation : -8k + 21 = 85 - 4k
+  Expected : k = -16
+  Result   : k = -16
+  Status   : PASS
+
+[057] Linear
+  Equation : -3t - 6 = 6 + t
+  Expected : t = -3
+  Result   : t = -3
+  Status   : PASS
+
+[058] Linear
+  Equation : 15 - 8k = 70 + 3k
+  Expected : k = -5
+  Result   : k = -5
+  Status   : PASS
+
+[059] Linear
+  Equation : 16 - 4n = -5n + 35
+  Expected : n = 19
+  Result   : n = 19
+  Status   : PASS
+
+[060] Linear
+  Equation : -8b - 5 = -31 - 6b
+  Expected : b = 13
+  Result   : b = 13
+  Status   : PASS
+
+[061] Linear
+  Equation : 13 + 8z = -7z - 47
+  Expected : z = -4
+  Result   : z = -4
+  Status   : PASS
+
+[062] Linear
+  Equation : 10 + 7z = 28 + 5z
+  Expected : z = 9
+  Result   : z = 9
+  Status   : PASS
+
+[063] Linear
+  Equation : 2z + 23 = 9z + 149
+  Expected : z = -18
+  Result   : z = -18
+  Status   : PASS
+
+[064] Linear
+  Equation : 14 + 8t = 4t - 46
+  Expected : t = -15
+  Result   : t = -15
+  Status   : PASS
+
+[065] Linear
+  Equation : 3k + 14 = 53
+  Expected : k = 13
+  Result   : k = 13
+  Status   : PASS
+
+[066] Linear
+  Equation : 6b + 28 = 3 + b
+  Expected : b = -5
+  Result   : b = -5
+  Status   : PASS
+
+[067] Linear
+  Equation : 9 + 5x = 39 - 5x
+  Expected : x = 3
+  Result   : x = 3
+  Status   : PASS
+
+[068] Linear
+  Equation : 29 + 8a = 2a + 119
+  Expected : a = 15
+  Result   : a = 15
+  Status   : PASS
+
+[069] Linear
+  Equation : 18 - 2x = -9x - 94
+  Expected : x = -16
+  Result   : x = -16
+  Status   : PASS
+
+[070] Linear
+  Equation : -28 + 2n = -44 - 6n
+  Expected : n = -2
+  Result   : n = -2
+  Status   : PASS
+
+[071] Linear
+  Equation : 9a - 5 = -200 - 6a
+  Expected : a = -13
+  Result   : a = -13
+  Status   : PASS
+
+[072] Linear
+  Equation : -27 + 3k = -15
+  Expected : k = 4
+  Result   : k = 4
+  Status   : PASS
+
+[073] Linear
+  Equation : x + 6 = -8x + 33
+  Expected : x = 3
+  Result   : x = 3
+  Status   : PASS
+
+[074] Linear
+  Equation : -4 - 2a = 10 - a
+  Expected : a = -14
+  Result   : a = -14
+  Status   : PASS
+
+[075] Linear
+  Equation : 17 - 4b = 5b + 188
+  Expected : b = -19
+  Result   : b = -19
+  Status   : PASS
+
+[076] Linear
+  Equation : 13 + 9k = 7k + 51
+  Expected : k = 19
+  Result   : k = 19
+  Status   : PASS
+
+[077] Linear
+  Equation : -8b + 30 = 2b - 70
+  Expected : b = 10
+  Result   : b = 10
+  Status   : PASS
+
+[078] Linear
+  Equation : -5 - 5a = 75 - a
+  Expected : a = -20
+  Result   : a = -20
+  Status   : PASS
+
+[079] Linear
+  Equation : 23 - 7z = -2z + 118
+  Expected : z = -19
+  Result   : z = -19
+  Status   : PASS
+
+[080] Linear
+  Equation : -9t + 5 = -94
+  Expected : t = 11
+  Result   : t = 11
+  Status   : PASS
+
+----------------------------------------------------------------------
+SECTION 2 — Quadratic Equations (ax^2 + bx + c = 0)  (80 cases)
+----------------------------------------------------------------------
+
+[081] Quadratic
+  Equation : 5y^2 + 40y + 80 = 0
+  Expected : (computed by parser)
+  Result   : root = -4
+  Status   : PASS
+
+[082] Quadratic
+  Equation : 4a^2 - 10a - 9 = 0
+  Expected : (computed by parser)
+  Result   : a1 = 3.202562419, a2 = -0.702562419
+  Status   : PASS
+
+[083] Quadratic
+  Equation : 4t^2 + 6t - 2 = 0
+  Expected : (computed by parser)
+  Result   : t1 = 0.2807764064, t2 = -1.7807764064
+  Status   : PASS
+
+[084] Quadratic
+  Equation : -5t^2 + 6t - 1 = 0
+  Expected : (computed by parser)
+  Result   : t1 = 0.2, t2 = 1
+  Status   : PASS
+
+[085] Quadratic
+  Equation : 4z^2 + 24z + 36 = 0
+  Expected : (computed by parser)
+  Result   : root = -3
+  Status   : PASS
+
+[086] Quadratic
+  Equation : 6n^2 - 9n + 9 = 0
+  Expected : (computed by parser)
+  Result   : n1 = 0.75 + 0.9682458366i, n2 = 0.75 - 0.9682458366i
+  Status   : PASS
+
+[087] Quadratic
+  Equation : 5k^2 - 2k - 11 = 0
+  Expected : (computed by parser)
+  Result   : k1 = 1.6966629547, k2 = -1.2966629547
+  Status   : PASS
+
+[088] Quadratic
+  Equation : -z^2 - 3z - 2 = 0
+  Expected : (computed by parser)
+  Result   : z1 = -2, z2 = -1
+  Status   : PASS
+
+[089] Quadratic
+  Equation : -4x^2 + 16x - 16 = 0
+  Expected : (computed by parser)
+  Result   : root = 2
+  Status   : PASS
+
+[090] Quadratic
+  Equation : 2t^2 + 11t + 11 = 0
+  Expected : (computed by parser)
+  Result   : t1 = -1.3138593384, t2 = -4.1861406616
+  Status   : PASS
+
+[091] Quadratic
+  Equation : 6x^2 - x + 7 = 0
+  Expected : (computed by parser)
+  Result   : x1 = 0.0833333333 + 1.0769039986i, x2 = 0.0833333333 - 1.0769039986i
+  Status   : PASS
+
+[092] Quadratic
+  Equation : -5n^2 - 2n - 8 = 0
+  Expected : (computed by parser)
+  Result   : n1 = -0.2 - 1.2489995997i, n2 = -0.2 + 1.2489995997i
+  Status   : PASS
+
+[093] Quadratic
+  Equation : 6a^2 + 24a + 24 = 0
+  Expected : (computed by parser)
+  Result   : root = -2
+  Status   : PASS
+
+[094] Quadratic
+  Equation : 5k^2 - 12k + 5 = 0
+  Expected : (computed by parser)
+  Result   : k1 = 1.8633249581, k2 = 0.5366750419
+  Status   : PASS
+
+[095] Quadratic
+  Equation : 2z^2 - 8z = 0
+  Expected : (computed by parser)
+  Result   : z1 = 4, z2 = 0
+  Status   : PASS
+
+[096] Quadratic
+  Equation : 4k^2 - 11k - 7 = 0
+  Expected : (computed by parser)
+  Result   : k1 = 3.2830421903, k2 = -0.5330421903
+  Status   : PASS
+
+[097] Quadratic
+  Equation : 2b^2 - 4b + 2 = 0
+  Expected : (computed by parser)
+  Result   : root = 1
+  Status   : PASS
+
+[098] Quadratic
+  Equation : z^2 - 5z + 11 = 0
+  Expected : (computed by parser)
+  Result   : z1 = 2.5 + 2.1794494718i, z2 = 2.5 - 2.1794494718i
+  Status   : PASS
+
+[099] Quadratic
+  Equation : 5b^2 - 3b - 1 = 0
+  Expected : (computed by parser)
+  Result   : b1 = 0.8385164807, b2 = -0.2385164807
+  Status   : PASS
+
+[100] Quadratic
+  Equation : 5b^2 + 2b - 1 = 0
+  Expected : (computed by parser)
+  Result   : b1 = 0.2898979486, b2 = -0.6898979486
+  Status   : PASS
+
+[101] Quadratic
+  Equation : 2y^2 + 24y + 72 = 0
+  Expected : (computed by parser)
+  Result   : root = -6
+  Status   : PASS
+
+[102] Quadratic
+  Equation : -2b^2 - 2b + 6 = 0
+  Expected : (computed by parser)
+  Result   : b1 = -2.3027756377, b2 = 1.3027756377
+  Status   : PASS
+
+[103] Quadratic
+  Equation : 5n^2 + 6n - 1 = 0
+  Expected : (computed by parser)
+  Result   : n1 = 0.1483314774, n2 = -1.3483314774
+  Status   : PASS
+
+[104] Quadratic
+  Equation : -3k^2 + 4k - 3 = 0
+  Expected : (computed by parser)
+  Result   : k1 = 0.6666666667 - 0.7453559925i, k2 = 0.6666666667 + 0.7453559925i
+  Status   : PASS
+
+[105] Quadratic
+  Equation : 2z^2 - 8z + 8 = 0
+  Expected : (computed by parser)
+  Result   : root = 2
+  Status   : PASS
+
+[106] Quadratic
+  Equation : 4b^2 - b + 6 = 0
+  Expected : (computed by parser)
+  Result   : b1 = 0.125 + 1.2183492931i, b2 = 0.125 - 1.2183492931i
+  Status   : PASS
+
+[107] Quadratic
+  Equation : -6b^2 - 8b + 2 = 0
+  Expected : (computed by parser)
+  Result   : b1 = -1.5485837704, b2 = 0.215250437
+  Status   : PASS
+
+[108] Quadratic
+  Equation : 3x^2 + 7x + 7 = 0
+  Expected : (computed by parser)
+  Result   : x1 = -1.1666666667 + 0.9860132972i, x2 = -1.1666666667 - 0.9860132972i
+  Status   : PASS
+
+[109] Quadratic
+  Equation : -5z^2 + 60z - 180 = 0
+  Expected : (computed by parser)
+  Result   : root = 6
+  Status   : PASS
+
+[110] Quadratic
+  Equation : -2k^2 + 4k + 4 = 0
+  Expected : (computed by parser)
+  Result   : k1 = -0.7320508076, k2 = 2.7320508076
+  Status   : PASS
+
+[111] Quadratic
+  Equation : 2t^2 - 5t - 3 = 0
+  Expected : (computed by parser)
+  Result   : t1 = 3, t2 = -0.5
+  Status   : PASS
+
+[112] Quadratic
+  Equation : -5a^2 - 8a = 0
+  Expected : (computed by parser)
+  Result   : a1 = -1.6, a2 = 0
+  Status   : PASS
+
+[113] Quadratic
+  Equation : 3n^2 + 6n + 3 = 0
+  Expected : (computed by parser)
+  Result   : root = -1
+  Status   : PASS
+
+[114] Quadratic
+  Equation : -3z^2 + 12z + 6 = 0
+  Expected : (computed by parser)
+  Result   : z1 = -0.4494897428, z2 = 4.4494897428
+  Status   : PASS
+
+[115] Quadratic
+  Equation : 3k^2 + 3k + 10 = 0
+  Expected : (computed by parser)
+  Result   : k1 = -0.5 + 1.7559422921i, k2 = -0.5 - 1.7559422921i
+  Status   : PASS
+
+[116] Quadratic
+  Equation : -z^2 - z + 9 = 0
+  Expected : (computed by parser)
+  Result   : z1 = -3.5413812651, z2 = 2.5413812651
+  Status   : PASS
+
+[117] Quadratic
+  Equation : -3y^2 = 0
+  Expected : (computed by parser)
+  Result   : root = 0
+  Status   : PASS
+
+[118] Quadratic
+  Equation : -5b^2 - 11b - 3 = 0
+  Expected : (computed by parser)
+  Result   : b1 = -1.8810249676, b2 = -0.3189750324
+  Status   : PASS
+
+[119] Quadratic
+  Equation : 2k^2 - 10k + 1 = 0
+  Expected : (computed by parser)
+  Result   : k1 = 4.8979157617, k2 = 0.1020842383
+  Status   : PASS
+
+[120] Quadratic
+  Equation : 5b^2 + 7b - 3 = 0
+  Expected : (computed by parser)
+  Result   : b1 = 0.3440306509, b2 = -1.7440306509
+  Status   : PASS
+
+[121] Quadratic
+  Equation : 6n^2 - 24n + 24 = 0
+  Expected : (computed by parser)
+  Result   : root = 2
+  Status   : PASS
+
+[122] Quadratic
+  Equation : -y^2 - 11y + 1 = 0
+  Expected : (computed by parser)
+  Result   : y1 = -11.0901699437, y2 = 0.0901699437
+  Status   : PASS
+
+[123] Quadratic
+  Equation : -5k^2 + 9k + 11 = 0
+  Expected : (computed by parser)
+  Result   : k1 = -0.8349351573, k2 = 2.6349351573
+  Status   : PASS
+
+[124] Quadratic
+  Equation : 5b^2 - 9b + 11 = 0
+  Expected : (computed by parser)
+  Result   : b1 = 0.9 + 1.1789826123i, b2 = 0.9 - 1.1789826123i
+  Status   : PASS
+
+[125] Quadratic
+  Equation : -3k^2 + 36k - 108 = 0
+  Expected : (computed by parser)
+  Result   : root = 6
+  Status   : PASS
+
+[126] Quadratic
+  Equation : -2x^2 + 2x + 8 = 0
+  Expected : (computed by parser)
+  Result   : x1 = -1.5615528128, x2 = 2.5615528128
+  Status   : PASS
+
+[127] Quadratic
+  Equation : -3x^2 + 12x + 3 = 0
+  Expected : (computed by parser)
+  Result   : x1 = -0.2360679775, x2 = 4.2360679775
+  Status   : PASS
+
+[128] Quadratic
+  Equation : -5k^2 - 8k + 12 = 0
+  Expected : (computed by parser)
+  Result   : k1 = -2.5435595774, k2 = 0.9435595774
+  Status   : PASS
+
+[129] Quadratic
+  Equation : -k^2 + 8k - 16 = 0
+  Expected : (computed by parser)
+  Result   : root = 4
+  Status   : PASS
+
+[130] Quadratic
+  Equation : -2x^2 + 5x - 12 = 0
+  Expected : (computed by parser)
+  Result   : x1 = 1.25 - 2.1065374433i, x2 = 1.25 + 2.1065374433i
+  Status   : PASS
+
+[131] Quadratic
+  Equation : 5x^2 - 6x + 9 = 0
+  Expected : (computed by parser)
+  Result   : x1 = 0.6 + 1.2i, x2 = 0.6 - 1.2i
+  Status   : PASS
+
+[132] Quadratic
+  Equation : 4b^2 - 5b + 6 = 0
+  Expected : (computed by parser)
+  Result   : b1 = 0.625 + 1.0532687216i, b2 = 0.625 - 1.0532687216i
+  Status   : PASS
+
+[133] Quadratic
+  Equation : -6k^2 - 48k - 96 = 0
+  Expected : (computed by parser)
+  Result   : root = -4
+  Status   : PASS
+
+[134] Quadratic
+  Equation : -5z^2 - 8z = 0
+  Expected : (computed by parser)
+  Result   : z1 = -1.6, z2 = 0
+  Status   : PASS
+
+[135] Quadratic
+  Equation : 5b^2 - 2b + 3 = 0
+  Expected : (computed by parser)
+  Result   : b1 = 0.2 + 0.7483314774i, b2 = 0.2 - 0.7483314774i
+  Status   : PASS
+
+[136] Quadratic
+  Equation : -k^2 - k = 0
+  Expected : (computed by parser)
+  Result   : k1 = -1, k2 = 0
+  Status   : PASS
+
+[137] Quadratic
+  Equation : 4z^2 - 16z + 16 = 0
+  Expected : (computed by parser)
+  Result   : root = 2
+  Status   : PASS
+
+[138] Quadratic
+  Equation : z^2 - z - 10 = 0
+  Expected : (computed by parser)
+  Result   : z1 = 3.7015621187, z2 = -2.7015621187
+  Status   : PASS
+
+[139] Quadratic
+  Equation : 3a^2 - 3a + 8 = 0
+  Expected : (computed by parser)
+  Result   : a1 = 0.5 + 1.5545631755i, a2 = 0.5 - 1.5545631755i
+  Status   : PASS
+
+[140] Quadratic
+  Equation : k^2 - 5k - 4 = 0
+  Expected : (computed by parser)
+  Result   : k1 = 5.7015621187, k2 = -0.7015621187
+  Status   : PASS
+
+[141] Quadratic
+  Equation : t^2 - 2t + 1 = 0
+  Expected : (computed by parser)
+  Result   : root = 1
+  Status   : PASS
+
+[142] Quadratic
+  Equation : 5a^2 - 12 = 0
+  Expected : (computed by parser)
+  Result   : a1 = 1.5491933385, a2 = -1.5491933385
+  Status   : PASS
+
+[143] Quadratic
+  Equation : -y^2 - 5y + 1 = 0
+  Expected : (computed by parser)
+  Result   : y1 = -5.1925824036, y2 = 0.1925824036
+  Status   : PASS
+
+[144] Quadratic
+  Equation : 3z^2 + 3z + 2 = 0
+  Expected : (computed by parser)
+  Result   : z1 = -0.5 + 0.6454972244i, z2 = -0.5 - 0.6454972244i
+  Status   : PASS
+
+[145] Quadratic
+  Equation : 6y^2 - 60y + 150 = 0
+  Expected : (computed by parser)
+  Result   : root = 5
+  Status   : PASS
+
+[146] Quadratic
+  Equation : 4b^2 + 12b - 8 = 0
+  Expected : (computed by parser)
+  Result   : b1 = 0.5615528128, b2 = -3.5615528128
+  Status   : PASS
+
+[147] Quadratic
+  Equation : 2a^2 + 7 = 0
+  Expected : (computed by parser)
+  Result   : a1 = 1.8708286934i, a2 = -1.8708286934i
+  Status   : PASS
+
+[148] Quadratic
+  Equation : -2a^2 - 3a - 6 = 0
+  Expected : (computed by parser)
+  Result   : a1 = -0.75 - 1.5612494996i, a2 = -0.75 + 1.5612494996i
+  Status   : PASS
+
+[149] Quadratic
+  Equation : -6k^2 = 0
+  Expected : (computed by parser)
+  Result   : root = 0
+  Status   : PASS
+
+[150] Quadratic
+  Equation : -4y^2 + 2y - 5 = 0
+  Expected : (computed by parser)
+  Result   : y1 = 0.25 - 1.0897247359i, y2 = 0.25 + 1.0897247359i
+  Status   : PASS
+
+[151] Quadratic
+  Equation : 2k^2 - k - 6 = 0
+  Expected : (computed by parser)
+  Result   : k1 = 2, k2 = -1.5
+  Status   : PASS
+
+[152] Quadratic
+  Equation : 5t^2 - 7t - 3 = 0
+  Expected : (computed by parser)
+  Result   : t1 = 1.7440306509, t2 = -0.3440306509
+  Status   : PASS
+
+[153] Quadratic
+  Equation : 3x^2 - 6x + 3 = 0
+  Expected : (computed by parser)
+  Result   : root = 1
+  Status   : PASS
+
+[154] Quadratic
+  Equation : 6t^2 + 7t + 8 = 0
+  Expected : (computed by parser)
+  Result   : t1 = -0.5833333333 + 0.9965217286i, t2 = -0.5833333333 - 0.9965217286i
+  Status   : PASS
+
+[155] Quadratic
+  Equation : 5n^2 + 10n - 10 = 0
+  Expected : (computed by parser)
+  Result   : n1 = 0.7320508076, n2 = -2.7320508076
+  Status   : PASS
+
+[156] Quadratic
+  Equation : -b^2 - 5b - 5 = 0
+  Expected : (computed by parser)
+  Result   : b1 = -3.6180339887, b2 = -1.3819660113
+  Status   : PASS
+
+[157] Quadratic
+  Equation : 5b^2 + 50b + 125 = 0
+  Expected : (computed by parser)
+  Result   : root = -5
+  Status   : PASS
+
+[158] Quadratic
+  Equation : -2k^2 - 6k - 1 = 0
+  Expected : (computed by parser)
+  Result   : k1 = -2.8228756555, k2 = -0.1771243445
+  Status   : PASS
+
+[159] Quadratic
+  Equation : -x^2 + 12x - 11 = 0
+  Expected : (computed by parser)
+  Result   : x1 = 1, x2 = 11
+  Status   : PASS
+
+[160] Quadratic
+  Equation : -5a^2 + 6a - 8 = 0
+  Expected : (computed by parser)
+  Result   : a1 = 0.6 - 1.1135528726i, a2 = 0.6 + 1.1135528726i
+  Status   : PASS
+
+----------------------------------------------------------------------
+SECTION 3 — Systems of Two Linear Equations  (40 cases)
+----------------------------------------------------------------------
+
+[161] System
+  Equation : 7y + 6b = -98  &  6y + 5b = -84
+  Expected : y = -14, b = 0
+  Result   : b = 0, y = -14
+  Status   : PASS
+
+[162] System
+  Equation : -9x - 6b = -177  &  6x - 2b = 40
+  Expected : x = 11, b = 13
+  Result   : b = 13, x = 11
+  Status   : PASS
+
+[163] System
+  Equation : x - 5y = 4  &  -5x + 6y = -1
+  Expected : x = -1, y = -1
+  Result   : x = -1, y = -1
+  Status   : PASS
+
+[164] System
+  Equation : 7a - 9n = -33  &  -3a + 4n = 13
+  Expected : a = -15, n = -8
+  Result   : a = -15, n = -8
+  Status   : PASS
+
+[165] System
+  Equation : -5y - 4b = 0  &  3y - 2b = -44
+  Expected : y = -8, b = 10
+  Result   : b = 10, y = -8
+  Status   : PASS
+
+[166] System
+  Equation : 5y - 2n = 20  &  -4y + 2n = -22
+  Expected : y = -2, n = -15
+  Result   : n = -15, y = -2
+  Status   : PASS
+
+[167] System
+  Equation : -y - 4a = 21  &  2y - 7a = 3
+  Expected : y = -9, a = -3
+  Result   : a = -3, y = -9
+  Status   : PASS
+
+[168] System
+  Equation : 9x + 3y = 60  &  7x + 7y = 14
+  Expected : x = 9, y = -7
+  Result   : x = 9, y = -7
+  Status   : PASS
+
+[169] System
+  Equation : 9n - 8b = 39  &  2n + b = 17
+  Expected : n = 7, b = 3
+  Result   : b = 3, n = 7
+  Status   : PASS
+
+[170] System
+  Equation : 2y + 6z = 64  &  -2y + 7z = 92
+  Expected : y = -4, z = 12
+  Result   : y = -4, z = 12
+  Status   : PASS
+
+[171] System
+  Equation : -3x + 6a = 27  &  -7x + 5a = -18
+  Expected : x = 9, a = 9
+  Result   : a = 9, x = 9
+  Status   : PASS
+
+[172] System
+  Equation : -7y - 9t = -8  &  7y + 3t = -58
+  Expected : y = -13, t = 11
+  Result   : t = 11, y = -13
+  Status   : PASS
+
+[173] System
+  Equation : -2z + n = 11  &  -2z - 9n = -39
+  Expected : z = -3, n = 5
+  Result   : n = 5, z = -3
+  Status   : PASS
+
+[174] System
+  Equation : 8n + 9b = 102  &  -5n + 8b = -91
+  Expected : n = 15, b = -2
+  Result   : b = -2, n = 15
+  Status   : PASS
+
+[175] System
+  Equation : -9z + 3k = -87  &  -4z + 5k = -79
+  Expected : z = 6, k = -11
+  Result   : k = -11, z = 6
+  Status   : PASS
+
+[176] System
+  Equation : 5n - x = -27  &  -2n + 6x = 22
+  Expected : n = -5, x = 2
+  Result   : n = -5, x = 2
+  Status   : PASS
+
+[177] System
+  Equation : 6t + 6a = 78  &  6t + 4a = 56
+  Expected : t = 2, a = 11
+  Result   : a = 11, t = 2
+  Status   : PASS
+
+[178] System
+  Equation : 4y + 5n = -9  &  -y + 7n = 60
+  Expected : y = -11, n = 7
+  Result   : n = 7, y = -11
+  Status   : PASS
+
+[179] System
+  Equation : -9b + k = -70  &  2b + 4k = -14
+  Expected : b = 7, k = -7
+  Result   : b = 7, k = -7
+  Status   : PASS
+
+[180] System
+  Equation : y + 4z = 61  &  2y - 6z = -88
+  Expected : y = 1, z = 15
+  Result   : y = 1, z = 15
+  Status   : PASS
+
+[181] System
+  Equation : -6t - 9z = 39  &  3t - 5z = -10
+  Expected : t = -5, z = -1
+  Result   : t = -5, z = -1
+  Status   : PASS
+
+[182] System
+  Equation : -9b - 8n = 112  &  6b + 8n = -112
+  Expected : b = 0, n = -14
+  Result   : b = 0, n = -14
+  Status   : PASS
+
+[183] System
+  Equation : -b - 4y = -9  &  -9b - 2y = -13
+  Expected : b = 1, y = 2
+  Result   : b = 1, y = 2
+  Status   : PASS
+
+[184] System
+  Equation : -6b + 8k = -102  &  3b - 2k = 39
+  Expected : b = 9, k = -6
+  Result   : b = 9, k = -6
+  Status   : PASS
+
+[185] System
+  Equation : -9z - 7k = -46  &  8z - 3k = 4
+  Expected : z = 2, k = 4
+  Result   : k = 4, z = 2
+  Status   : PASS
+
+[186] System
+  Equation : 3t + 6n = -57  &  7t - 6n = -53
+  Expected : t = -11, n = -4
+  Result   : n = -4, t = -11
+  Status   : PASS
+
+[187] System
+  Equation : 3b - n = -51  &  b + 7n = 93
+  Expected : b = -12, n = 15
+  Result   : b = -12, n = 15
+  Status   : PASS
+
+[188] System
+  Equation : 7n - x = -8  &  -8n - 6x = -48
+  Expected : n = 0, x = 8
+  Result   : n = 0, x = 8
+  Status   : PASS
+
+[189] System
+  Equation : 8a - 6z = -46  &  -8a - 4z = 116
+  Expected : a = -11, z = -7
+  Result   : a = -11, z = -7
+  Status   : PASS
+
+[190] System
+  Equation : -7x - 8n = 67  &  7x + 4n = -79
+  Expected : x = -13, n = 3
+  Result   : n = 3, x = -13
+  Status   : PASS
+
+[191] System
+  Equation : 5b - 7t = 48  &  -2b + 9t = -13
+  Expected : b = 11, t = 1
+  Result   : b = 11, t = 1
+  Status   : PASS
+
+[192] System
+  Equation : 7b + y = 85  &  3b + 2y = 38
+  Expected : b = 12, y = 1
+  Result   : b = 12, y = 1
+  Status   : PASS
+
+[193] System
+  Equation : n + 8z = 62  &  4n + 6z = 14
+  Expected : n = -10, z = 9
+  Result   : n = -10, z = 9
+  Status   : PASS
+
+[194] System
+  Equation : 7t + 7a = -126  &  -2t + 7a = -45
+  Expected : t = -9, a = -9
+  Result   : a = -9, t = -9
+  Status   : PASS
+
+[195] System
+  Equation : -7k + 3n = -37  &  8k - n = 52
+  Expected : k = 7, n = 4
+  Result   : k = 7, n = 4
+  Status   : PASS
+
+[196] System
+  Equation : -3k + 3n = 69  &  -5k + 4n = 103
+  Expected : k = -11, n = 12
+  Result   : k = -11, n = 12
+  Status   : PASS
+
+[197] System
+  Equation : -5a + 5y = 70  &  5a + 2y = -70
+  Expected : a = -14, y = 0
+  Result   : a = -14, y = 0
+  Status   : PASS
+
+[198] System
+  Equation : -9z + n = -101  &  -z - 8n = 5
+  Expected : z = 11, n = -2
+  Result   : n = -2, z = 11
+  Status   : PASS
+
+[199] System
+  Equation : 5y + 4a = -103  &  -9y + 9a = 72
+  Expected : y = -15, a = -7
+  Result   : a = -7, y = -15
+  Status   : PASS
+
+[200] System
+  Equation : 4z + 5x = -46  &  7z + 9x = -80
+  Expected : z = -14, x = 2
+  Result   : x = 2, z = -14
+  Status   : PASS
+
+======================================================================
+END OF TEST SUITE
+======================================================================
